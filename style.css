@@ -5,17 +5,18 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-i{
+/* i{
     cursor: pointer;
-}
-.menu-bar{
-    display: none;
-}
+} */
+
 header > nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 90px 120px;
+}
+header .menu-bar {
+    display: none;
 }
 .nav-title h2{
     color: #3A3A3A;
@@ -53,8 +54,53 @@ header > nav {
     height: 24px;
 }
 
+/* banner styles */
+.btn{
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.banner-content h1{
+    color: #3A3A3A;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.banner-content p{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 0px
+}
+.banner-img{
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 450px;
+}
+.banner-content, .banner-img{
+    max-width: 50%;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:130px;
+    padding: 0px 120px;
+}
+
 @media screen and (max-width: 576px){
-    .menu-bar{
+    header .menu-bar{
         display:inline-block;
     }
     .nav-bar{
@@ -63,6 +109,8 @@ header > nav {
         transform: translate(-50%);
         width: 100%;
         border-bottom: 2px solid black;
+        z-index: 1;
+        background: #FFF;
         /* display: none; */
     }
     .nav-bar ul{
@@ -80,6 +128,7 @@ header > nav {
         /* border-bottom: 1px solid black; */
         box-shadow: 0.5px 0.5px 1px rgb(158, 156, 156);
         text-align: center;
+        display: block;
     }
     header>nav{
         padding: 35px 15px;
@@ -93,6 +142,39 @@ header > nav {
     }
     .cart{
         margin-right: 16px;
+    }
+
+    /* banner styles */
+    .banner {
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+        padding: 18px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-content, .banner-img {
+        max-width: none;
+    }
+    .banner-img{
+        margin: 20px 50px;
+        width: 257px;
+        height: 257px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-img img{
+        width: 202px;
+        height: 190px;
+    }
+    .banner-content h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .btn{
+        margin: 0 auto;
     }
 
 }
