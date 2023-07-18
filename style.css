@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -106,13 +106,96 @@ header .menu-bar {
 }
 .sponsor-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 40px 0px;
-    border: 2px solid;
+    border: 1px solid;
     border-image: radial-gradient( rgb(117, 117, 119), rgb(255, 255, 255))1;
     border-left: none;
     border-right: none;
     
+}
+
+/* collection section styles */
+.collection h2{
+    color: #3A3A3A;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.collection{
+    margin: 0 195px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+}
+.card{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.card img{
+    width: 100%;
+}
+.card-content h3{
+    color:#18191F;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 15px 0px;
+}
+.price{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+.desc{
+    color:#787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+}
+.collection .see-more{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    left: 90%;
+    top: 50px;
+}
+
+/* feature styles */
+.btn-1{
+    border-radius: 0px;
+}
+.feature{
+    margin: 100px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 95px;
+}
+.feature-content h2{
+    color: #0A0826;
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+.feature-content p{
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 16px 0px;
 }
 
 
@@ -209,6 +292,41 @@ header .menu-bar {
         padding: 30px 20px;
     }
 
+    /* collection styles */
+    .collection {
+        margin: 0 15px;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .collection h2{
+        font-size: 1rem;
+    }
+    .collection .see-more{
+        left: 70%;
+    }
+
+
+    /* feature styles */
+    .feature{
+        flex-direction: column-reverse;
+        gap: 0px;
+        margin: 50px 30px;
+        text-align: center;
+    }
+    .feature img{
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .feature-content h2{
+        color: #0A0826;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 50px;
+    }
+
 
 }
 
@@ -270,14 +388,16 @@ header .menu-bar {
         /* banner styles */
         .banner {
             gap: 20px;
-            padding: 20px;
+            padding: 25px;
         }
-        .banner-content h1{
-            font-size: 2rem;
+        .banner-content h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: normal;
         }
-        .banner-img{
-            width: 400px;
-            height: 400px;
+        .banner-img {
+            width: 300px;
+            height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -289,4 +409,33 @@ header .menu-bar {
         .sponsor {
             margin: 65px;
         }
+        .collection {
+            margin: 40px;
+        }
+        .collection .see-more{
+            left: 85%;
+        }
+        .feature {
+            gap: 10px;
+            margin: 50px 30px;
+            text-align: left;
+         }
+         .feature img{
+            max-width: 40%;
+         }
+        .feature-content h2 {
+            color: #0A0826;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 0px;
+        }
+        .feature-content p {
+            color: #6C6C6C;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: normal;
+            padding:0px;
+        }
+    }
 }
