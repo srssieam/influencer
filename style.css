@@ -5,9 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* i{
-    cursor: pointer;
-} */
+
 
 header > nav {
     display: flex;
@@ -53,6 +51,9 @@ header .menu-bar {
     width: 24px;
     height: 24px;
 }
+i{
+    cursor: pointer;
+}
 
 /* banner styles */
 .btn{
@@ -67,6 +68,10 @@ header .menu-bar {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #fa5491;
 }
 .banner-content h1{
     color: #3A3A3A;
@@ -137,6 +142,10 @@ header .menu-bar {
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 15px;
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: 0px 0px 40px 0px rgba(46, 44, 44, 0.788);
 }
 .card img{
     width: 100%;
@@ -196,6 +205,34 @@ header .menu-bar {
     font-weight: 700;
     line-height: 28px;
     padding: 16px 0px;
+}
+
+/* footer styles */
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.footer h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer p{
+    color: #D9DBE1;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer-icons{
+    padding-top: 20px;
+}
+.footer-icons a{
+    color: white;
+    margin: 20px 12px;
+}
+.footer-icons i:hover {
+    color: rgb(68, 204, 238);
 }
 
 
@@ -326,6 +363,15 @@ header .menu-bar {
         line-height: normal;
         margin-top: 50px;
     }
+    footer h2{
+        font-size: 1rem;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .footer-icons i {
+        font-size: 16px;
+    }
 
 
 }
@@ -437,5 +483,7 @@ header .menu-bar {
             line-height: normal;
             padding:0px;
         }
-    }
+        .footer-icons i {
+            font-size: 24px;
+        }
 }
