@@ -99,6 +99,24 @@ header .menu-bar {
     padding: 0px 120px;
 }
 
+/* sponsor section styles */
+.sponsor{
+    margin: 65px 165px;
+    text-align: center;
+}
+.sponsor-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+    border: 2px solid;
+    border-image: radial-gradient( rgb(117, 117, 119), rgb(255, 255, 255))1;
+    border-left: none;
+    border-right: none;
+    
+}
+
+
+/* style for small device */
 @media screen and (max-width: 576px){
     header .menu-bar{
         display:inline-block;
@@ -175,6 +193,22 @@ header .menu-bar {
     .btn{
         margin: 0 auto;
     }
+    /* sponsor section styles */
+    .sponsor {
+        margin:0px;
+        text-align: center;
+    }
+    .sponsor-container{
+        border:none;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .sponsor-container img{
+        max-width: 100px;
+        padding: 30px 20px;
+    }
+
 
 }
 
@@ -221,7 +255,7 @@ header .menu-bar {
         }
     
         .nav-title h2 {
-            font-size: 16px;
+            font-size: 2rem;
             font-weight: 700;
         }
     
@@ -251,5 +285,8 @@ header .menu-bar {
         .banner-img img{
             width: 300px;
             height: 300px;
+        }
+        .sponsor {
+            margin: 65px;
         }
 }
